@@ -28,7 +28,7 @@ Framework used for testing : PHPUnit
 To make it work assign parking spaces that are not used<br>
 <b>rpsuh p_id 10 9 8 7 6 5 4 3 2 1</b><br>
 Than using command prompt call the script<br>
-<b>redis-cli -h hostname -p portname --eval redis_lua_task_Sah.lua airplane:number</b>
+<b>redis-cli -h hostname -p portname --eval redis_lua_task_sah.lua airplane:number</b>
 
 
 
