@@ -27,21 +27,20 @@
 			} catch (Exception $ex){
 				echo $ex->getMessage() . '<br>';
 			}
-		} else {
-			if(isset($robot)){
-				if($item == 'MOVE') {
-					$robot->move();
-					if($field->checkPosition($robot->nextPosition)) {
-						$robot->successfullMove();
-					}
-				} elseif($item == 'REPORT') {
-					echo $robot->report() . '<br>';
-				} elseif($item == 'LEFT') {
-					$robot->rotateLeft();
-				} elseif($item == 'RIGHT') {
-					$robot->rotateRight();
+		} 
+		if(isset($robot)){
+			if($item == 'MOVE') {
+				$robot->move();
+				if($field->checkPosition($robot->nextPosition)) {
+					$robot->successfullMove();
 				}
+			} elseif($item == 'REPORT') {
+				echo $robot->report() . '<br>';
+			} elseif($item == 'LEFT') {
+				$robot->rotateLeft();
+			} elseif($item == 'RIGHT') {
+				$robot->rotateRight();
 			}
-		}
+		}		
 		$index ++;
 	}
