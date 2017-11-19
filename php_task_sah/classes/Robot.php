@@ -39,17 +39,13 @@
 
 		private function setEastPosition() {
 			$this->nextPosition = new Position($this->position->x + 1, $this->position->y, $this->position->facing);
-		}
-
-		// This function is checking if value of facing incremented by one is greater than facing array		
+		}			
 
 		public function rotateRight() {
 			if(++$this->position->facing > Facing::WEST) {
 				$this->position->facing = Facing::NORTH;
 			}
 		}
-
-		// This function is checking if value of facing decremented by one is greater than facing array	
 
 		public function rotateLeft() {
 			if(--$this->position->facing < Facing::NORTH) {				
