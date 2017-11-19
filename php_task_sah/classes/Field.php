@@ -16,11 +16,8 @@
 			$this->y = $y;			
 		}		
 
-		public function checkPosition(Position $position) {			
-			if($position->x > $this->x || $position->x < 0 || $position->y > $this->y || $position->y < 0) {
-				return false;
-			}
-			return true;
+		public function checkPosition(Position $position) {
+			return !($position->x > $this->x || $position->x < 0 || $position->y > $this->y || $position->y < 0);
 		}
 	}
 
