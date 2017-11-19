@@ -16,3 +16,19 @@ Framework used for testing : PHPUnit
 <h4>Test</h4>
 
 <p>To test the code of an application use command phpunit tests/ inside the folder of the application</p>
+
+<h3>2. PostgreSQL - CrewDatabase</h3>
+
+<p> SQL Code can be found in database_task_sah.sql with some test data and queries.</p>
+
+<h3>3. Redis | Lua </h3>
+
+<p>Lua script that will be used within redis can be found inside redis_lua_task_sah.lua file</p>
+
+# To make it work assign parking spaces that are not used
+rpsuh p_id 10 9 8 7 6 5 4 3 2 1 
+# Than using command prompt call the script 
+redis-cli -h <host> -p <port> --eval redis_lua_task_Sah.lua airplane:<num>
+
+
+
