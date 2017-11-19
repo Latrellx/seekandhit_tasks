@@ -8,11 +8,10 @@
 		public $y;
 
 		public function __construct($x, $y) {
-			if(!is_numeric($x) || !is_numeric($y)) {
-				if($x != $y) {
-					throw new Exception('Invalid field initialization');
-				}
+			if(!is_numeric($x) || !is_numeric($y) || ($x != $y)) {
+				throw new Exception('Invalid field initialization');
 			}
+			
 			$this->x = $x;
 			$this->y = $y;			
 		}		

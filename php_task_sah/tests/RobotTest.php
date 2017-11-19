@@ -95,14 +95,6 @@
 			$this->assertEquals($robot->report(), 'Current position X : 0 and Y : 0 WEST');
 			$robot->rotateRight();
 			$this->assertEquals($robot->report(), 'Current position X : 0 and Y : 0 NORTH');
-		}
-
-    	/**
-    	* @expectedException Exception('Invalid field initialization')
-    	*/
-		public function testInvalidInitField() {
-			$field = new Field(12,4);
-		}    	
-		
+		}		
 	}
 ?>
