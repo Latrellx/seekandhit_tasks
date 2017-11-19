@@ -1,6 +1,6 @@
 <h1>Seek And Hit Tasks</h1>
 
-<p>Tasks done for company Seek and Hit to demonstrate programming expirience</p>
+<p>Tasks done for company Seek and Hit to demonstrate programming experience</p>
 
 <h3>1. Toy Robot</h3>
 
@@ -13,9 +13,9 @@ Framework used for testing : PHPUnit
 
 <p>Results of the given parameters are shown in index.php file inside the folder php_task_sah</p>
 
-<h4>Test</h4>
+<h4>Tests</h4>
 
-<p>To test the code of an application use command phpunit tests/ inside the folder of the application</p>
+<p>To test the code of an application use command 'phpunit tests/' in root of an aplication inside command line tool</p>
 
 <h3>2. PostgreSQL - CrewDatabase</h3>
 
