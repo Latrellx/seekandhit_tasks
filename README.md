@@ -26,9 +26,9 @@ Framework used for testing : PHPUnit
 <p>Lua script that will be used within redis can be found inside redis_lua_task_sah.lua file</p>
 
 <p>To make it work assign parking spaces that are not used</p>
-rpsuh p_id 10 9 8 7 6 5 4 3 2 1 
+<b>rpsuh p_id 10 9 8 7 6 5 4 3 2 1</b>
 <p>Than using command prompt call the script</p>
-redis-cli -h <host> -p <port> --eval redis_lua_task_Sah.lua airplane:<num>
+<b>redis-cli -h <host> -p <port> --eval redis_lua_task_Sah.lua airplane:<num></b>
 
 
 
